@@ -1,0 +1,19 @@
+{
+  "name": "cypress_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy-open": "cypress open",
+    "test:chrome": "cypress run --env TransferProtocol='https' --browser chrome --config viewportHeight=763,viewportWidth=700",
+    "test:firefox": "cypress run -–browser firefox",
+    "cypress:electron:headed": "cypress run --env TransferProtocol='http' --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.16.1"
+  }
+}
